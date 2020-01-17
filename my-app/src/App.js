@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Display from './components/Display';
-import Dashboard from './components/Dashboard'
+import Display from './components/Display.js';
+import Dashboard from './components/Dashboard.js'
 import './App.css';
 
 export default function App() {
@@ -48,7 +48,7 @@ export default function App() {
     setHit(hit + 1)
   }
 
-  const clearHit = () => {
+  const clearAll = () => {
     setStrikes(0)
     setBalls(0)
     setFoul(0)
@@ -63,7 +63,7 @@ export default function App() {
         addStrike={addStrike}
         addFoul={addFoul}
         addHit={addHit}
-        clear={clearHit}
+        clear={clearAll}
       />
       <Display
         balls={balls}

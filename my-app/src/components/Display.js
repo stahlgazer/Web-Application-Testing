@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function Display(props) {
     return (
         <div>
-            <p>Strikes: {props.strikes}</p>
+            <br />
+            <p data-testid="displayStrikes">Strikes: {props.strikes}</p>
             <p>Balls: {props.balls}</p>
-            <p>Foul Balls:{props.foul}</p>
+            <p>Foul Balls: {props.foul}</p>
             <p>Hits: {props.hit}</p>
         </div>
     )
