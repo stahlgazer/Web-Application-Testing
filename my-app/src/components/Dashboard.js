@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
+import { Button } from 'reactstrap';
+
 
 export default function Dashboard(props) {
     return (
         <div>
-            <button onClick={props.addStrike}>Strike</button>
-            <button onClick={props.addBall}>Ball</button>
-            <button onClick={props.addFoul}>Foul Ball</button>
-            <button onClick={props.addHit}>Hit</button>
-            <button onClick={props.clear}>Next Inning</button>
+            <Button onClick={props.addStrike}>Strike</Button>
+            <Button onClick={props.addBall}>Ball</Button>
+            <Button onClick={props.addFoul}>Foul Ball</Button>
+            <Button onClick={props.addHit}>Hit</Button>
+            <Button onClick={props.clear}>Next Inning</Button>
         </div>
     )
 }
